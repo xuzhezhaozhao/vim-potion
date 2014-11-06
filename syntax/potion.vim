@@ -37,6 +37,7 @@ syntax match potionOperator "\v\?"
 syntax match potionOperator "\v\*\="
 syntax match potionOperator "\v/\="
 syntax match potionOperator "\v\+\="
+syntax match potionOperator "\v\*"
 syntax match potionOperator "\v-\="
 highlight link potionOperator Operatorg
 
@@ -48,6 +49,6 @@ highlight link potionNumber Number
 " skip 用来处理这种情况: "She said: \"Vimscript is tricky, but useful\"!"
 " :h syn-region
 syntax region potionString start=/\v"/ skip=/\v\\./ end=/\v"/
-highlight link potionString Strinsyntax match potionOperator "\v\*"
+highlight link potionString String
 
 let b:current_syntax = "potion"
